@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("AaxhsFC3RZjXnvyep");
+    })();
+  </script>
+  <link rel="stylesheet" href="scss/main.css">
+  <title>Contact Me | Front End Developer</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header-inner">
+    <div class="container mx-auto">
+      <nav id="main-nav">
+        <img style="padding-bottom:10px;" src="img/my_logo.png" alt="" id="logo">
+        <ul class="d-flex">
+          <li> <a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li> <a href="contact.html" class="current">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="contact-a" class="text-center py-3">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="bottom-line"></div>
+      <div class="lead">Here is how you can reach me</div>
+
+      <form action="https://formsubmit.co/el/tacuza" method="POST" id="form" method="POST">
+        <div class="text-feilds">
+          <input id="name" type="text" class="text-input name-input" placeholder="Name" name="name">
+          <input type="text" id="subject" class="subject-input text-input" placeholder="Subject" name="subject">
+          <input type="email" id="email" class="email-input text-input" placeholder="Email" name="email">
+          <input type="text" id="phone" class="phone-input name-input" placeholder="Phone" name="Phone">
+          <textarea class="text-input message-input" id="message" placeholder="Enter Message" name="message"></textarea>
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+        <button id="submit" type="submit" class="btn-dark">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section id="contact-b" class="py-3 bg-dark">
+    <div class="container">
+      <div class="contact-info d-flex justify-content-between text-center">
+        <div>
+          <i class="bi bi-envelope"></i>
+          <h3>Email</h3>
+          <p>dhungeln12@gmail.com</p>
+        </div>
+        <div>
+          <i class="bi bi-phone"></i>
+          <h3>Phone</h3>
+          <p style="color:white;margin-bottom: 0;padding:0;">9861626534</p>
+          <!-- <p style="color:white;margin-bottom: 0;padding:0;">9821835987</p> -->
+
+        </div>
+        <div>
+          <i class="bi bi-house"></i>
+          <h3>Address</h3>
+          <p>Mahadevsthan Koteshwor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section C -->
+  <section id="contact-c" class="bg-main py-4 text-center">
+    <h1>Let's Start Your Next Project</h1>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="main-footer" class="">
+    <div class="footer-content text-center container">
+      <div class="row">
+        <div class="col-md-3">
+          <p> Copyright &copy; 2023 All Rights Reserved</p>
+        </div>
+
+        <div class="col-md-4"></div>
+        <div class="social col-md-5">
+          <a href="https://www.facebook.com/nischal.jms" target="_blank"><i style="color:white;"
+              class="bi bi-facebook col-md-2"></i></a>
+          <a href="https://www.instagram.com/nischal__dhungel/" target="_blank"><i style="color:white;"
+              class="bi bi-instagram col-md-2"></i></a>
+          <a href="https://www.linkedin.com/in/nischal-dhungel-497473269/" target="_blank"><i style="color:white;"
+              class="bi bi-linkedin col-md-2"></i></a>
+          <a href="https://twitter.com/nischal1191" target="_blank"><i style="color:white;"
+              class="bi bi-twitter col-md-2"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="footer-2 text-center">
+      <h5 style="color:black;text-align: center; text-transform: none; padding: 10px;">Developed by <a
+          href="https://www.facebook.com/nischal.jms" target="_blank"> <strong
+            style="margin-left:10px; text-decoration: underline;"> Nischal
+            Dhungel</strong></a>
+      </h5>
+    </div>
+  </footer>
+
+</body>
+
+
+
+
+<script>
+  const name = document.getElementById('name');
+  const sub = document.getElementById('subject');
+  const email = document.getElementById('email');
+  const num = document.getElementById('phone');
+  const mes = document.getElementById('message');
+  const form = document.getElementById('form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    let isValid = true;
+
+    if (name.value.length < 3) {
+      name.classList.add('error');
+      name.placeholder = 'Enter a valid name';
+      document.querySelector("input").style.color = "red";
+      name.style.color = 'red';
+      isValid = false;
+    } else {
+      name.classList.add('success');
+    }
+
+    const re = /\S+@\S+\.\S+/;
+    if (!re.test(email.value)) {
+      email.classList.add('error');
+      email.placeholder = 'Enter a valid email e.g., someone@gmail.com';
+      isValid = false;
+    } else {
+      email.classList.add('success');
+    }
+
+    if (num.value.length < 10) {
+      num.placeholder = 'Number not valid';
+      num.classList.add('error');
+      isValid = false;
+    } else {
+      num.classList.add('success');
+    }
+
+    if (mes.value.length <= 5) {
+      mes.classList.add('error');
+      mes.placeholder = 'Write some message';
+      isValid = false;
+    } else {
+      mes.classList.add('success');
+    }
+
+    if (sub.value.length <= 1) {
+      sub.placeholder = 'Enter a subject';
+      sub.classList.add('error');
+      isValid = false;
+    } else {
+      sub.classList.add('success');
+    }
+
+    if (!isValid) {
+      console.log("Hii")
+      alert("Please fill all the necessary details")
+      return; // Exit the function if conditions are not met
+    }
+
+    sendmail();
+  });
+
+  // Form Submission
+  function sendmail() {
+    var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+      phone: document.getElementById("phone").value,
+      subject: document.getElementById("subject").value,
+    };
+
+    const serviceid = "service_5h1pqai";
+    const templateid = "template_9palg54";
+
+    emailjs.send(serviceid, templateid, params)
+      .then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully");
+      })
+      .catch((err) => console.log(err));
+  }
+</script>
+
+
+
+</html>

@@ -1,0 +1,18 @@
+// Variables
+
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url("../Dist/My Resources/6B250094-CE0D-4617-B85D-35C5DA02FDCD.jpeg");
+
+// Set text color
+
+@function set-test-color($color) {
+  @if (lightness($color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
